@@ -68,6 +68,15 @@ style="background: url('images/hero-topografia.jpg.jpeg') center center / cover 
 </p>
 						<p class="style3">Formación intensiva orientada al trabajo en campo, manejo de estación total,
 nivelación y procesamiento de datos topográficos.</p>
+
+						
+						<div id="countdown" style="margin-top:20px; font-size:22px; font-weight:bold; color:#ffcc00;">
+⏳ Inscripciones cierran en:
+<span id="timer"></span>
+</div>
+
+
+						
 						<ul class="actions">
 							<li><a href="#main" class="button style3 large">Ver Programa</a></li>
 						</ul>
@@ -183,6 +192,9 @@ Cupos limitados por grupo.
                     <p><strong>Horario:</strong> 8:00 am – 12:00 pm</p>
                     <p><strong>Duración:</strong> 4 semanas + certificado </p>
                     <p style="font-size:28px;"><strong>S/ 400</strong></p>
+					<p style="color:red; font-weight:bold; margin-top:10px;">
+🔥 Últimos 8 cupos disponibles
+</p>
                     <a href="https://wa.me/51957935820?text=Hola,%20quiero%20información%20sobre%20la%20modalidad%20de%20Lunes%20a%20Viernes"
                        class="button style1" target="_blank">
                        Inscribirme
@@ -197,6 +209,9 @@ Cupos limitados por grupo.
                     <p><strong>Horario:</strong> 8:00 am – 5:00 pm</p>
                     <p><strong>Duración:</strong>2 dias + certificado </p>
                     <p style="font-size:28px;"><strong>S/ 250</strong></p>
+					<p style="color:red; font-weight:bold; margin-top:10px;">
+🔥 Últimos 8 cupos disponibles
+</p>
                     <a href="https://wa.me/51957935820?text=Hola,%20quiero%20información%20sobre%20la%20modalidad%20de%20fin%20de%20semana"
                        class="button style1" target="_blank">
                        Inscribirme
@@ -535,9 +550,35 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.counter'));
 </script>
+
+<script>
+const countdownDate = new Date().getTime() + (5 * 24 * 60 * 60 * 1000); // 5 días
+
+const timerFunction = setInterval(function() {
+
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("timer").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(timerFunction);
+    document.getElementById("timer").innerHTML = "CERRADO";
+  }
+
+}, 1000);
+</script>
+
 		
 	</body>
 </html>
+
 
 
 
