@@ -20,6 +20,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <link rel="stylesheet" href="assets/css/main.css">
+
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+		
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -48,7 +51,7 @@
 				</section>
 
 			<!-- Intro -->
-				<section id="intro" class="wrapper style1">
+				<section id="intro" class="wrapper style1" data-aos="fade-up">
 					<div class="title">Nuestro Curso</div>
 					<div class="container">
 						<p class="style1">Capacitación práctica y especializada en topografía</p>
@@ -84,25 +87,25 @@ nivelación y procesamiento de datos topográficos.</p>
 								</header>
 								<div class="feature-list">
 									<div class="row">
-										<div class="col-6 col-12-medium">
+										<div class="col-6 col-12-medium" data-aos="fade-right">
 											<section>
 												<h3 class="icon solid fa-check">Semana 1 - Fundamentos</h3>
 												<p>Nivelación, manejo de instrumentos y teoría aplicada.</p>
 											</section>
 										</div>
-										<div class="col-6 col-12-medium">
+										<div class="col-6 col-12-medium" data-aos="fade-left">
 											<section>
 												<h3 class="icon solid fa-check">Semana 2 - Estación Total</h3>
 												<p>Configuración, levantamientos en campo y descarga de datos.</p>
 											</section>
 										</div>
-										<div class="col-6 col-12-medium">
+										<div class="col-6 col-12-medium" data-aos="fade-up">
 											<section>
 												<h3 class="icon solid fa-check">Semana 3 - Procesamiento</h3>
 												<p>Software topográfico, cálculos y elaboración de planos.</p>
 											</section>
 										</div>
-										<div class="col-6 col-12-medium">
+										<div class="col-6 col-12-medium" data-aos="fade-down">
 											<section>
 												<h3 class="icon solid fa-check">Semana 4 - Proyecto Final</h3>
 												<p>Trabajo real en campo y certificación final.</p>
@@ -433,6 +436,16 @@ Escríbenos por WhatsApp
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+		
+
 <a href="https://wa.me/51957935820" 
    target="_blank" 
    style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; font-size:20px; text-decoration:none;">
@@ -458,6 +471,7 @@ Escríbenos por WhatsApp
 		
 	</body>
 </html>
+
 
 
 
