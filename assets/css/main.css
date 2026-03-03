@@ -3038,3 +3038,17 @@ input, select, textarea {
 .highlight:hover .image img {
     transform: scale(1.05);
 }
+
+/* ESTILO CORREGIDO PARA SEMANAS */
+
+.program-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.program-title i {
+    color: #1e90ff;
+    font-size: 18px;
+}
