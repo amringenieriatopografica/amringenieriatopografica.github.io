@@ -2982,3 +2982,26 @@ input, select, textarea {
 							margin-top: 0;
 						}
 	}
+
+/* TÍTULO HERO RESPONSIVE */
+
+.hero-title {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Tablet */
+@media screen and (max-width: 980px) {
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 736px) {
+    .hero-title {
+        font-size: 24px;
+    }
+}
+
