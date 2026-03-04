@@ -27,13 +27,33 @@
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
+			<!-- Barra Superior Profesional -->
+<div class="top-bar">
+    <div class="top-bar-container">
+        <div class="top-left">
+            <i class="fas fa-map-marker-alt"></i> San Martín de Porres – Lima |
+            <i class="fas fa-phone"></i> +51 957 935 820 |
+            <i class="fas fa-envelope"></i> requenalliuya@gmail.com
+        </div>
+        <div class="top-right">
+            <a href="https://facebook.com/@alfredomauricio.requenalliuya" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://tiktok.com/@amringenieriatopografica" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com/@deteccioncasma4687" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
 		<meta property="og:image" content="https://tusitio.com/images/hero-topografia.jpg">
 <meta property="og:locale" content="es_PE">
 <link rel="icon" href="images/favicon.png" type="image/png">	
+			
 
-<div style="background:#111; color:white; padding:8px; text-align:center; font-size:14px;">
-📍 San Martín de Porres – Lima | 📞 +51 957 935 820 | ✉ requenalliuya@gmail.com
-</div>
 			
 			<!-- Header -->
 				<section id="header" class="wrapper">
@@ -723,10 +743,50 @@ const timerFunction = setInterval(function() {
    Inscribirme
 </a>
 
+<style>
+.top-bar {
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 0;
+}
 
+.top-bar-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar i {
+    margin-right: 5px;
+}
+
+.top-right a {
+    color: white;
+    margin-left: 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.top-right a:hover {
+    color: #25D366;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .top-bar-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}
+</style>
 		
 	</body>
 </html>
+
 
 
 
